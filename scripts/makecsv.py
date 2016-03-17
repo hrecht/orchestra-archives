@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Author: Hannah Recht
-Save main NY Phil archives data as CSVs for analysis
+Save main NY Phil archives data as CSVs - program header info, works info, concerts info
 Data source: NY Philharmonic digital archives https://github.com/nyphilarchive/PerformanceHistory
 https://raw.githubusercontent.com/nyphilarchive/PerformanceHistory/master/Programs/complete.xml
-See documentation: http://nyphil.org/about-us/history/performance-history-help
 """
 
 import csv
@@ -41,7 +40,7 @@ headers()
 def works():
     with open('../data/programs_works.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programid", "worknumber", "composer", "work", "conductor"])
+        writer.writerow(["programid", "workid", "worknumber", "composer", "work", "conductor", "movement", "movementid"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
             worknumber = 0
@@ -49,16 +48,22 @@ def works():
                 # Only do non-intermissions
                 if (work.find('interval')) == None:
                     worknumber += 1
-                    composerName = work.find('composerName').text
-                    if work.find('workTitle') != None:
-                        workTitle = work.find('workTitle').text
-                    elif work.find('workTitle') == None:
-                        workTitle = ""
-                    if work.find('conductorName') != None:
-                        conductorName = work.find('conductorName').text
-                    elif work.find('conductorName') == None:
-                        conductorName = ""
-                    writer.writerow([programID, worknumber, composerName, workTitle, conductorName])
+                    workID = work.get('ID')
+                    row = [programID, workID, worknumber]
+                    # Add work-level data
+                    for var in ["composerName", "workTitle", "conductorName", "movement"]:
+                        if work.find(var) != None:
+                            lvar = work.find(var).text
+                        elif work.find(var) == None:
+                            lvar = ""
+                        row.append(lvar)
+                    # Movement ID if it exists
+                    if work.find('movement') != None:
+                        movementID = work.find('movement').get('ID')
+                    elif work.find('movement') == None:
+                         movementID = ""
+                    row.append(movementID)
+                    writer.writerow(row)
 works()
 
 # programID, concert info for each concert
