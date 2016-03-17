@@ -1,4 +1,5 @@
-programID,concertnumber,eventType,location,venue,date,time
+programid,concertnumber,eventtype,location,venue,date,time
+13927,1,None,None,None,1600-01-01,
 3853,1,Subscription Season,"Manhattan, NY",Apollo Rooms,1842-12-07,20:00
 5178,1,Subscription Season,"Manhattan, NY",Apollo Rooms,1843-02-18,20:00
 10785,1,Special,"Manhattan, NY",Apollo Rooms,1843-04-07,20:00
@@ -1773,6 +1774,7 @@ programID,concertnumber,eventType,location,venue,date,time
 3260,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1915-03-04,20:15
 3260,2,Subscription Season,"Manhattan, NY",Carnegie Hall,1915-03-05,14:30
 8395,1,Subscription Season,"Manhattan, NY",Aeolian Hall,1915-03-05,15:00
+8395,2,None,"Manhattan, NY",Aeolian Hall,1915-03-07,15:00
 3267,1,Subscription Season,"Manhattan, NY",Waldorf-Astoria Hotel,1915-03-06,15:00
 3271,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1915-03-07,15:00
 5508,1,Tour,"Baltimore, MD",Lyric Theatre,1915-03-08,20:30
@@ -3758,7 +3760,10 @@ programID,concertnumber,eventType,location,venue,date,time
 4301,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1926-01-10,15:00
 8774,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1926-01-14,15:00
 8774,2,Subscription Season,"Manhattan, NY",Carnegie Hall,1926-01-15,20:30
-4305,1,Special,"Manhattan, NY",Mecca Auditorium,1926-01-16,20:30
+4305,1,None,"Manhattan, NY",Carnegie Hall,1926-01-14,20:30
+4305,2,None,"Manhattan, NY",Carnegie Hall,1926-01-15,14:30
+4305,3,Special,"Manhattan, NY",Mecca Auditorium,1926-01-16,20:30
+4305,4,None,"Philadelphia, PA",Academy of Music,1926-01-20,14:30
 4307,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1926-01-17,15:00
 8775,1,Subscription Season,"Manhattan, NY",Mecca Auditorium,1926-01-17,15:00
 4312,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1926-01-21,20:30
@@ -5094,6 +5099,7 @@ programID,concertnumber,eventType,location,venue,date,time
 12396,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-06-30,20:30
 12397,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-07-01,20:30
 12398,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-07-02,20:30
+12399,1,None,None,None,1932-07-03,
 12400,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-07-04,20:30
 12401,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-07-05,20:30
 12402,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1932-07-06,20:30
@@ -5314,6 +5320,7 @@ programID,concertnumber,eventType,location,venue,date,time
 13115,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1933-08-06,20:30
 13117,1,Stadium Concert,"Manhattan, NY","Great Hall, City College of New York",1933-08-08,20:30
 13116,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1933-08-09,20:30
+13116,2,None,None,None,1933-08-10,20:30
 13118,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1933-08-11,20:30
 13119,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1933-08-12,20:30
 13120,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1933-08-13,20:30
@@ -5816,6 +5823,8 @@ programID,concertnumber,eventType,location,venue,date,time
 12223,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1936-06-29,20:30
 12224,1,Stadium Concert,"Manhattan, NY",Great Hall - City College,1936-06-30,20:30
 12225,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1936-07-01,20:30
+12227,1,None,None,None,1936-07-02,20:30
+12227,2,None,None,None,1936-07-03,
 12228,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1936-07-02,20:30
 12228,2,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1936-07-03,20:30
 12229,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1936-07-04,20:30
@@ -5877,6 +5886,7 @@ programID,concertnumber,eventType,location,venue,date,time
 12113,1,Runout,"Philadelphia, PA",Academy of Music,1936-11-19,20:00
 791,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1936-11-22,15:00
 796,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1936-11-23,20:45
+10124,1,None,"Manhattan, NY",Carnegie Chamber Music Hall at Carnegie Hall,1936-11-23,20:30
 801,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1936-11-26,20:45
 801,2,Subscription Season,"Manhattan, NY",Carnegie Hall,1936-11-27,14:30
 805,1,Subscription Season,"Manhattan, NY",Carnegie Hall,1936-11-29,15:00
@@ -5996,6 +6006,7 @@ programID,concertnumber,eventType,location,venue,date,time
 12196,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1937-07-24,20:30
 12197,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1937-07-25,20:30
 12198,1,Stadium Concert,"Manhattan, NY",Great Hall - City College,1937-07-26,20:30
+12199,1,None,None,None,1937-07-27,
 12200,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1937-07-28,20:30
 12201,1,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1937-07-29,20:30
 12201,2,Stadium Concert,"Manhattan, NY",Lewisohn Stadium,1937-07-30,20:30
@@ -19589,6 +19600,7 @@ programID,concertnumber,eventType,location,venue,date,time
 9666,2,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2007-11-02,11:00
 9666,3,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2007-11-03,20:00
 9667,1,Saturday Matinee,"Manhattan, NY",Avery Fisher Hall,2007-11-03,14:00
+13779,1,None,"Manhattan, NY",Hull Room,2007-11-06,18:30
 10106,1,Chamber Concert (Private),"Manhattan, NY",Rubenstein Home,2007-11-07,18:30
 9668,1,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2007-11-08,19:30
 9668,2,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2007-11-09,20:00
@@ -19839,6 +19851,7 @@ programID,concertnumber,eventType,location,venue,date,time
 9822,2,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2008-11-21,11:00
 9822,3,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2008-11-22,20:00
 9948,1,Young People's Concert,"Manhattan, NY",Avery Fisher Hall,2008-11-22,14:00
+9949,1,None,"Manhattan, NY",Avery Fisher Hall,2008-11-24,19:30
 9823,1,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2008-11-25,19:30
 9823,2,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2008-11-28,20:00
 9823,3,Subscription Season,"Manhattan, NY",Avery Fisher Hall,2008-11-29,20:00
@@ -19896,6 +19909,8 @@ programID,concertnumber,eventType,location,venue,date,time
 10226,1,Young People's Concerts for Schools,"Manhattan, NY",Avery Fisher Hall,2009-02-13,10:30
 10226,2,Young People's Concerts for Schools,"Manhattan, NY",Avery Fisher Hall,2009-02-13,12:00
 10137,1,Chamber,"Manhattan, NY",Merkin Concert Hall,2009-02-15,15:00
+9840,1,None,"Manhattan, NY",Carnegie Hall,2009-02-17,20:00
+9841,1,None,"Manhattan, NY",Carnegie Hall,2009-02-18,20:00
 9953,1,Tour,"Atlanta, GA",Donna and Marvin Schwartz Center for the Performing Arts (Emerson Concert Hall),2009-02-21,20:00
 9989,1,Tour,"West Palm Beach, FL","Kravis Center for the Performing Arts (Alexander W. Dreyfoos, Jr. Concert Hall)",2009-02-22,20:00
 13319,1,Tour,"Naples, FL",Philharmonic Center for the Arts (Hayes Hall),2009-02-23,20:00
@@ -20669,6 +20684,7 @@ programID,concertnumber,eventType,location,venue,date,time
 11883,1,Parks,"Queens, NY",Cunningham Park,2012-07-12,20:00
 11883,2,Parks,"Manhattan, NY",Great Lawn,2012-07-16,20:00
 11883,3,Parks,"Bronx, NY",Van Cortlandt Park,2012-07-17,20:00
+13094,1,None,"Staten Island, NY",City University of New York,2012-07-15,15:00
 11734,1,Tour,"Vail, CO",Gerald R. Ford Amphitheater,2012-07-20,18:00
 11735,1,Tour,"Vail, CO",Gerald R. Ford Amphitheater,2012-07-21,18:00
 11736,1,Tour,"Vail, CO",Gerald R. Ford Amphitheater,2012-07-22,18:00

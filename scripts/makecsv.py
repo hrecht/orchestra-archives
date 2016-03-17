@@ -4,6 +4,7 @@ Author: Hannah Recht
 Save main NY Phil archives data as CSVs for analysis
 Data source: NY Philharmonic digital archives https://github.com/nyphilarchive/PerformanceHistory
 https://raw.githubusercontent.com/nyphilarchive/PerformanceHistory/master/Programs/complete.xml
+See documentation: http://nyphil.org/about-us/history/performance-history-help
 """
 
 import csv
@@ -18,7 +19,7 @@ root = tree.getroot()
 def headers():
     with open('../data/programs_main.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programID","orchestra", "id", "season", "nconcerts", "nworks"])
+        writer.writerow(["programid","orchestra", "id", "season", "nconcerts", "nworks"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
             orchestra = program.find('orchestra').text
@@ -28,9 +29,7 @@ def headers():
             nconcerts = 0
             nworks = 0
             for concert in program.iter('concertInfo'):
-                eventType = concert.find('eventType').text
-                if eventType != "None":
-                    nconcerts += 1
+                nconcerts += 1
             for work in program.iter('work'):
                 # Don't count intermissions
                 if (work.find('interval')) == None:
@@ -42,7 +41,7 @@ headers()
 def works():
     with open('../data/programs_works.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programID", "worknumber", "composerName", "workTitle", "conductorName"])
+        writer.writerow(["programid", "worknumber", "composer", "work", "conductor"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
             worknumber = 0
@@ -66,23 +65,22 @@ works()
 def concerts():
     with open('../data/programs_concerts.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programID", "concertnumber", "eventType", "location", "venue", "date", "time"])
+        writer.writerow(["programid", "concertnumber", "eventtype", "location", "venue", "date", "time"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
             concertnumber = 0
             for concert in program.iter('concertInfo'):
                 eventType = concert.find('eventType').text
-                if eventType != "None":
-                    concertnumber += 1
-                    location = concert.find('Location').text
-                    venue = concert.find('Venue').text
-                    # Date field time component is inaccurate, per data documentation
-                    date = (concert.find('Date').text)[:10]
-                    # Format 12 hour + AM/PM string into 24 hour time
-                    rawtime = concert.find('Time').text
-                    if rawtime != "None":
-                        formattime = datetime.datetime.strptime(rawtime, '%I:%M%p').strftime('%H:%M')
-                    elif rawtime=="None":
-                        formattime = ""
-                    writer.writerow([programID, concertnumber, eventType, location, venue, date, formattime])
+                concertnumber += 1
+                location = concert.find('Location').text
+                venue = concert.find('Venue').text
+                # Date field time component is inaccurate, per data documentation
+                date = (concert.find('Date').text)[:10]
+                # Format 12 hour + AM/PM string into 24 hour time
+                rawtime = concert.find('Time').text
+                if rawtime != "None":
+                    formattime = datetime.datetime.strptime(rawtime, '%I:%M%p').strftime('%H:%M')
+                elif rawtime=="None":
+                    formattime = ""
+                writer.writerow([programID, concertnumber, eventType, location, venue, date, formattime])
 concerts()

@@ -1,5 +1,5 @@
-programID,orchestra,id,season,nconcerts,nworks
-13927,New York Philharmonic,ab54538a-386d-4b80-bf72-c271901d5847,2016,0,0
+programid,orchestra,id,season,nconcerts,nworks
+13927,New York Philharmonic,ab54538a-386d-4b80-bf72-c271901d5847,2016,1,0
 3853,New York Philharmonic,38e072a7-8fc9-4f9a-8eac-3957905c0002,1842,1,8
 5178,New York Philharmonic,c7b2b95c-5e0b-431c-a340-5b37fc860b34,1842,1,8
 10785,Musicians from the New York Philharmonic,894e1a52-1ae5-4fa7-aec0-b99997555a37,1842,1,12
@@ -1366,7 +1366,7 @@ programID,orchestra,id,season,nconcerts,nworks
 6307,New York Philharmonic,d5687e3f-88a7-4b01-b7f5-a16d2627b372,1914,1,8
 10424,New York Symphony,ef60221a-f974-48c2-94db-3b6a447c18bb,1914,1,5
 3260,New York Philharmonic,1dfea16a-325a-4bb9-982f-b9cd5eb918cc,1914,2,4
-8395,New York Symphony,980d2106-461e-48ad-bff4-3b3dc9ad010a,1914,1,8
+8395,New York Symphony,980d2106-461e-48ad-bff4-3b3dc9ad010a,1914,2,8
 3267,New York Philharmonic,66ef80e5-f6c0-4853-802a-da80ca0ba781,1914,1,1
 3271,New York Philharmonic,e75be71a-778b-48b0-9e2b-cf9c310276c5,1914,1,4
 5508,New York Philharmonic,35d347ff-a39c-4569-ac71-19b8c9a616f4,1914,1,11
@@ -3068,7 +3068,7 @@ programID,orchestra,id,season,nconcerts,nworks
 8773,New York Symphony,319822c2-23b9-422b-b864-ccecdfec1123,1925,1,3
 4301,New York Philharmonic,06b377dc-b50a-405a-843b-0a13228de8de,1925,1,4
 8774,New York Symphony,88773416-1cfc-4de3-a1b8-90f186201778,1925,2,9
-4305,New York Philharmonic,c282ba0b-aafa-4fbb-985e-8bb4f3a2a014,1925,1,6
+4305,New York Philharmonic,c282ba0b-aafa-4fbb-985e-8bb4f3a2a014,1925,4,6
 4307,New York Philharmonic,bdadaeb8-bb0a-4ea6-a247-6c8f5cdc038a,1925,1,5
 8775,New York Symphony,f444ccac-bb4e-46de-8314-c7730f4a9ee0,1925,1,6
 4312,New York Philharmonic,13a7c37f-1455-4570-9564-6516df6f2f2f,1925,2,5
@@ -4080,7 +4080,7 @@ programID,orchestra,id,season,nconcerts,nworks
 12396,Stadium-NY Philharmonic,00db35bc-47ef-4373-938a-7e744fa8c9aa,1931,1,9
 12397,Stadium-NY Philharmonic,8aaf3325-3106-405f-8104-583b100fb3bf,1931,1,3
 12398,Stadium-NY Philharmonic,e34d0c1f-547c-4372-97bb-e2ca580aefe2,1931,1,5
-12399,Stadium-NY Philharmonic,2e04168c-6c4b-4166-bc81-82792350f8a9,1931,0,10
+12399,Stadium-NY Philharmonic,2e04168c-6c4b-4166-bc81-82792350f8a9,1931,1,10
 12400,Stadium-NY Philharmonic,7fbe743c-8fe8-40e5-bfa7-9aaeff8ece4c,1931,1,5
 12401,Stadium-NY Philharmonic,957f80d7-c655-49a6-b66a-8c9580c4dc08,1931,1,5
 12402,Stadium-NY Philharmonic,0382e293-4b4a-4172-9490-8871540a3dac,1931,1,11
@@ -4254,7 +4254,7 @@ programID,orchestra,id,season,nconcerts,nworks
 13114,Stadium-NY Philharmonic,99443b70-6b85-409d-8686-0970faa8746b,1932,1,6
 13115,Stadium-NY Philharmonic,e0a378b5-179b-48d5-a1f9-baa247e6dd34,1932,1,12
 13117,Stadium-NY Philharmonic,ea2a4e66-5ab7-489e-ac1f-10daab4d5525,1932,1,9
-13116,Stadium-NY Philharmonic,d3e381e2-c418-41be-b3c8-c1adb35ed9e2,1932,1,9
+13116,Stadium-NY Philharmonic,d3e381e2-c418-41be-b3c8-c1adb35ed9e2,1932,2,9
 13118,Stadium-NY Philharmonic,d368bdd0-a90a-4e10-99eb-0dcfd1ea1ad4,1932,1,9
 13119,Stadium-NY Philharmonic,e6775999-ba25-4ecc-8c73-fc1aed574a38,1932,1,3
 13120,Stadium-NY Philharmonic,5c217932-f414-42db-a1a7-e1429551ae0d,1932,1,4
@@ -4601,7 +4601,7 @@ programID,orchestra,id,season,nconcerts,nworks
 12223,Stadium-NY Philharmonic,363c46bd-84a5-40da-982a-3b5cefaec368,1935,1,6
 12224,Stadium-NY Philharmonic,969568ae-9d66-4f99-bae0-127afbb72303,1935,1,8
 12225,Stadium-NY Philharmonic,2ab27a2b-2eb5-4467-b5df-835687221e7d,1935,1,4
-12227,Stadium-NY Philharmonic,3799075f-4cc5-4135-99c9-7aa3fed5d037,1935,0,2
+12227,Stadium-NY Philharmonic,3799075f-4cc5-4135-99c9-7aa3fed5d037,1935,2,2
 12228,Stadium-NY Philharmonic,7ec59b91-ebe5-4c33-9ab3-15b0133802c6,1935,2,10
 12229,Stadium-NY Philharmonic,b2880ae8-cebc-4ab8-bc79-4fed192b9458,1935,1,4
 12230,Stadium-NY Philharmonic,f64cb1a5-4eb8-43fd-b60c-fd89ec0ba92c,1935,1,5
@@ -4653,7 +4653,7 @@ programID,orchestra,id,season,nconcerts,nworks
 12113,Musicians from the New York Philharmonic,073e18b2-1852-4da3-8639-ae6a05441ab8,1936,1,4
 791,New York Philharmonic,3c088748-3ec2-4d7a-bfab-8b8065225c42,1936,1,6
 796,New York Philharmonic,eada5ef2-0895-4b79-81ff-bc2881b40110,1936,1,5
-10124,NYP Presentation,58f76bc6-c023-443a-bf7e-e2efbfbc5420,1936,0,11
+10124,NYP Presentation,58f76bc6-c023-443a-bf7e-e2efbfbc5420,1936,1,11
 801,New York Philharmonic,8c386cbd-0c55-4df8-a056-1fd2d44f46ea,1936,2,5
 805,New York Philharmonic,1d200090-330f-4a36-8700-0b50d6425367,1936,1,4
 1165,New York Philharmonic,1eb55cb3-ad5a-4659-938c-6eb31cf40230,1936,2,4
@@ -4742,7 +4742,7 @@ programID,orchestra,id,season,nconcerts,nworks
 12196,Stadium-NY Philharmonic,aca90361-4936-41b1-b7ec-8fbf6f36b18b,1936,1,3
 12197,Stadium-NY Philharmonic,4c862cdf-4e6d-45dc-9aa0-4225bd278032,1936,1,10
 12198,Stadium-NY Philharmonic,6667f3a9-7848-4e11-bd95-6274484f463e,1936,1,9
-12199,Stadium-NY Philharmonic,f19015ee-8101-4404-ac9a-3d88c57e7226,1936,0,1
+12199,Stadium-NY Philharmonic,f19015ee-8101-4404-ac9a-3d88c57e7226,1936,1,1
 12200,Stadium-NY Philharmonic,b7333d82-a840-43af-8a5c-e3d648e77705,1936,1,5
 12201,Stadium-NY Philharmonic,aac6847d-dedb-4dc6-bc7a-ea98d92e9e1b,1936,2,1
 12202,Stadium-NY Philharmonic,6d22509f-8817-4864-965d-d97165e30a8f,1936,1,7
@@ -12656,7 +12656,7 @@ programID,orchestra,id,season,nconcerts,nworks
 9770,New York Philharmonic,9fe543ab-47a2-447f-8c0a-d77ccdae50f1,2007,1,3
 9666,New York Philharmonic,acff9c44-1851-4dad-9f29-72c3f6a38496,2007,3,3
 9667,New York Philharmonic,1b1db05b-17a8-47f4-95ff-5671b1dc02a4,2007,1,2
-13779,Musicians from the New York Philharmonic,5bc40326-d4fe-4726-be25-96e7889ea4e8,2007,0,0
+13779,Musicians from the New York Philharmonic,5bc40326-d4fe-4726-be25-96e7889ea4e8,2007,1,0
 10106,Musicians from the New York Philharmonic,55fde58d-dd4b-4402-8565-c93ee0df0b73,2007,1,5
 9668,New York Philharmonic,135c2d44-babc-4754-90fc-f29f94d88883,2007,3,4
 9669,New York Philharmonic,117d327d-8f2a-48dc-99a6-b5e4daa7b6dd,2007,1,11
@@ -12819,7 +12819,7 @@ programID,orchestra,id,season,nconcerts,nworks
 10446,Musicians from the New York Philharmonic,b651c013-866c-4c82-9545-aafef6dbf0ac,2008,1,0
 9822,New York Philharmonic,21e466ec-4942-4fb4-890a-097660c92bed,2008,3,3
 9948,New York Philharmonic,390be3c4-e2d7-400d-99d5-dfd2635a2379,2008,1,7
-9949,NYP Presentation,48eace8c-1da8-498b-8d09-253e82b7f480,2008,0,2
+9949,NYP Presentation,48eace8c-1da8-498b-8d09-253e82b7f480,2008,1,2
 9823,New York Philharmonic,81c7766b-fa5a-4c9d-bd09-2bb3bb8d4f5b,2008,3,3
 9824,New York Philharmonic,73c6898b-5d91-4f74-b55d-182e1355ee76,2008,1,3
 10447,Musicians from the New York Philharmonic,8b5f2182-882e-40b8-a5f7-c771f75a0224,2008,1,2
@@ -12852,8 +12852,8 @@ programID,orchestra,id,season,nconcerts,nworks
 10225,New York Philharmonic,dff1c55b-5d1a-4e58-a885-215a75bfdc67,2008,1,7
 10226,New York Philharmonic,cc924762-5493-4535-9a84-78a340fedf28,2008,2,7
 10137,NY Philharmonic Ensembles,1e1d068c-006d-4242-b0e4-da1082ae3a7b,2008,1,5
-9840,New York Philharmonic,1396289e-0984-4d25-867d-926bc6b7cc83,2008,0,2
-9841,New York Philharmonic,2140d262-20b0-4867-9bed-6f185f361c73,2008,0,3
+9840,New York Philharmonic,1396289e-0984-4d25-867d-926bc6b7cc83,2008,1,2
+9841,New York Philharmonic,2140d262-20b0-4867-9bed-6f185f361c73,2008,1,3
 9953,New York Philharmonic,d3a04f8a-b9d1-4269-aa99-0990699e579a,2008,1,5
 9989,New York Philharmonic,7a53f700-048f-4479-8537-e8d6b3e98972,2008,1,5
 13319,New York Philharmonic,817458e4-a017-4853-85dd-034cf65425e8,2008,1,5
@@ -13352,7 +13352,7 @@ programID,orchestra,id,season,nconcerts,nworks
 12008,New York Philharmonic,7b5cbab5-b2d3-4e03-995c-3078314ab7c4,2011,1,8
 11882,New York Philharmonic,55cbf1db-eb9b-4df8-a705-f5db1f6f7c84,2011,2,3
 11883,New York Philharmonic,192f97d4-790e-4be3-bf92-5d80f4fd2b25,2011,3,3
-13094,Members of NY Philharmonic,24e10bfb-ce2b-455b-802e-e51f4331a1a4,2011,0,9
+13094,Members of NY Philharmonic,24e10bfb-ce2b-455b-802e-e51f4331a1a4,2011,1,9
 11734,New York Philharmonic,e3f45858-e1f5-42be-bad5-541087e3e1d3,2011,1,5
 11735,New York Philharmonic,7c936a8a-aea5-4374-bc3e-d25473ac661a,2011,1,8
 11736,New York Philharmonic,0559f396-fcd6-4d2e-b35b-2f96e0836505,2011,1,9
