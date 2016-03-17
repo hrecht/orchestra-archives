@@ -1,3 +1,4 @@
 *.xml
 complete.json
 .Rproj.user
+scripts/old/
