@@ -18,38 +18,31 @@ root = tree.getroot()
 def headers():
     with open('../data/programs_main.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programid","orchestra", "id", "season", "nconcerts", "nworks"])
+        writer.writerow(["programid","orchestra", "id", "season", "nconcerts"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
             orchestra = program.find('orchestra').text
             id = program.find('id').text
             season = int((program.find('season').text)[:4])
-            # Count number of concerts given and works
+            # Count number of concerts given
             nconcerts = 0
-            nworks = 0
             for concert in program.iter('concertInfo'):
                 nconcerts += 1
-            for work in program.iter('work'):
-                # Don't count intermissions
-                if (work.find('interval')) == None:
-                    nworks += 1
-            writer.writerow([programID, orchestra, id, season, nconcerts, nworks])
+            writer.writerow([programID, orchestra, id, season, nconcerts])
 headers()
 
 # work info for each work performed - programID, # in program, composer, title, conductor
 def works():
     with open('../data/programs_works.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["programid", "workid", "worknumber", "composer", "work", "conductor", "movement", "movementid"])
+        writer.writerow(["programid", "workid", "composer", "work", "conductor", "movement", "movementid"])
         for program in root.iter('program'):
             programID = int(program.find('programID').text)
-            worknumber = 0
             for work in program.iter('work'):
                 # Only do non-intermissions
                 if (work.find('interval')) == None:
-                    worknumber += 1
                     workID = work.get('ID')
-                    row = [programID, workID, worknumber]
+                    row = [programID, workID]
                     # Add work-level data
                     for var in ["composerName", "workTitle", "conductorName", "movement"]:
                         if work.find(var) != None:

@@ -10,26 +10,15 @@ concerts <- read.csv("data/programs_concerts.csv", stringsAsFactors = F)
 works <- read.csv("data/programs_works.csv", stringsAsFactors = F)
 
 ########################################################################################################
-# When selected movements are performed, each movement is counted as its own work
-# ie if they perform 15 out of 16 movements, that's counted as 15 separate works - treat this as one work, not 15
-# This is particularly noticeable for the Messiah - see programid 9542, 9678, 10608 etc
-# Collapse these into a single work and create an nmovements column
+# Take advantage of new workid field, count unique works performed in each programid
 ########################################################################################################
-works <- works %>% mutate(p = 1) %>%
-  group_by(programid, composer, work, conductor) %>% 
-  summarize(nmovements = sum(p))
- 
-# Now replace nworks with new calculation that counts each piece as 1 work
-nworks <- works %>% mutate(p = 1)%>%
+works <- works %>%
   group_by(programid) %>%
-  summarize(nworks = sum(p))
+  mutate(nworks = n_distinct(workid))
 
-main <- main %>% select(-nworks)
-main <- left_join(main, nworks, by="programid")
-main$nworks[is.na(main$nworks)] <- 0
-summary(main$nworks)
-
-works <- left_join(works, main, by="programid")
+# Join to main
+temp <- works[!duplicated(works$programid),] 
+main <- left_join(main, temp[ , c("programid", "nworks")], by = "programid")
 
 ########################################################################################################
 # Concerts
@@ -43,9 +32,6 @@ eventtypes <- concerts %>% mutate(p=1) %>%
 eventtypes$dup <- duplicated(eventtypes$programid)
 # Nope, there are ~120 with multiple event types (usually subscription + student concerts)
 
-# super redundant one row per work x concert
-full <- merge(concerts, works, by="programid", all.x=T, all.y=T)
-
 locations <- as.data.frame(table(concerts$location))
 colnames(locations) <- c("location", "concerts")
 
@@ -53,6 +39,4 @@ colnames(locations) <- c("location", "concerts")
 # Analysis
 ########################################################################################################
 
-worksfreq <- full %>% mutate(p=1) %>%
-  group_by(composer, work, orchestra) %>% 
-  summarize(nconcerts = sum(p))
+# Count times a piece has appeared - but multiple movements in one concert = 1 appearance
