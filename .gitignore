@@ -2,3 +2,5 @@
 complete.json
 .Rproj.user
 scripts/old/
+.Rapp.history
+data/original/
